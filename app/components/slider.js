@@ -31,8 +31,9 @@ export default function Slider() {
   return (
     <div className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory"> 
         {fileNames.map((item, index) => (
-            <div className='w-full flex-shrink-0 snap-start'>    
+            <div key={index} className='w-full flex-shrink-0 snap-start'>    
                 <img
+                key={item.desc}
                 alt={item.desc}
                 className="w-full max-w-md rounded-full object-cover mb-4 mx-auto"
                 height="200"
@@ -43,8 +44,8 @@ export default function Slider() {
                 }}
                 width="200"
                 />
-                <h3 className="text-2xl font-bold">Capítulo {item.nmb}: {item.desc}</h3>
-                <Link className="text-grey-800 hover:underline" target="_blank" href={item.doc}>
+                <h3 key={item.img} className="text-2xl font-bold">Capítulo {item.nmb}: {item.desc}</h3>
+                <Link key={item.doc} className="text-grey-800 hover:underline" target="_blank" href={item.doc}>
                     Leer relato
                 </Link>
             </div>
