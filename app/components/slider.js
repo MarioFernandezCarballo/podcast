@@ -30,12 +30,13 @@ export default function Slider() {
 
   return (
     <div className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory"> 
+
         {fileNames.map((item, index) => (
-            <div key={index} className='w-full flex-shrink-0 snap-start'>    
+            <div key={index} className='w-full sm:w-1/3 flex-shrink-0 snap-start'>    
                 <img
                 key={item.desc}
                 alt={item.desc}
-                className="w-full max-w-md rounded-full object-cover mb-4 mx-auto"
+                className="w-full max-w-md rounded-full object-cover mb-4 mx-auto scale-x-75 scale-y-75 ease-linear transform hover:scale-105 transition duration-200"
                 height="200"
                 src={item.img}
                 style={{
