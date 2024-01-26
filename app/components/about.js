@@ -24,11 +24,7 @@ export default function About() {
                         Ingeniero de profesión y escritor de tiempo libre. Mis géneros son la Ciencia Ficción y la Fantasía, aunque me gusta probar con todo.
                         En 2020 publiqué Al otro lado de la esfera, que podéis encontrar en el siguiente enlace.
                     </p>
-                    <p>
-                        <Link className="text-grey-800 hover:underline" target="_blank" href="https://www.amazon.es/dp/B08B33M1WS?ref_=cm_sw_r_cp_ud_dp_KDGCQHD4TFYNR8QYYH29_1">
-                            Al otro lado de la esfera
-                        </Link>
-                    </p>
+                    <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="336" height="500" frameborder="0" allowfullscreen style={{maxWidth: '100%'}} src="https://read.amazon.com/kp/card?asin=B0894353X7&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_VZZQ919T6Q1A1NC4W2FS" ></iframe>
                 </div>
             </div>
             </div>
